@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head_title %}{{file.title}}{% endblock%}
+
+{% block body_class %}post-template{% endblock%}
+
+{% block content %}
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{file.title}}</h1>
+    <section class="post-meta">
+      <time class="post-date" datetime="{{file.date | date('YYYY-MM-DD')}}">{{file.date | date('D MMMM YYYY')}}</time> <span>on {% for tag in file.tags %}
+        <a href="{{file.metadataUrls[tag]}}">{{tag}}</a>{% if not loop.last%},{% endif %}
+      {% endfor%}</span>
+    </section>
+  </header>
+
+  <section class="post-content">
+    {{file.content | safe}}
+  </section>
+
+  <footer class="post-footer">
+    <figure class="author-image">
+      <a class="img" style="background-image: url({{site.gravatar_url}})"><span class="hidden">{{site.author}}'s Picture</span></a>
+    </figure>
+
+    <section class="follow">
+      <a class="twitter-follow-button" href="https://twitter.com/intent/follow?screen_name=jmsmrgn" target="_blank">
+        <i></i> Follow @jmsmrgn
+      </a>
+    </section>
+  </footer>
+
+  {% include '_comments.html' %}
+
+</article>
+
+{% endblock%}

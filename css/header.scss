@@ -1,0 +1,195 @@
+.main-header {
+  height: 340px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 5rem;
+  text-align: left;
+  background: radial-gradient(ellipse at bottom, #0b8793 0%, #360033 100%);
+  overflow: hidden;
+  @media only screen and (min-width: 901px) {
+    height: 380px;
+  }
+}
+.main-header-content {
+  position: relative;
+  padding-top: 40px;
+  text-align: center;
+  z-index: 1;
+}
+.main-header-description {
+  padding-left: 4rem;
+  padding-left: 0;
+  display: block;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: #FFF;
+      text-decoration: underline;
+    }
+  }
+  .page-title:hover {
+    text-decoration: none;
+  }
+}
+.main-header-logo {
+  position: relative;
+  background: none !important;
+  border: none !important;
+  display: block;
+  img {
+    display: block;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    @media only screen and (min-width: 901px) {
+      height: 100px;
+    }
+    @media only screen and (min-width: 901px) {
+      height: 100px;
+    }
+  }
+}
+.page-title {
+  margin: 10px 0 10px 0;
+  font-size: 5rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  @media only screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 3rem;
+  }
+}
+.page-description {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.01rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.7rem;
+  @media only screen and (min-width: 900px) {
+    font-size: 2.1rem;
+  }
+}
+.main-nav {
+  a {
+    color: rgba(255,255,255,0.8);
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    @media only screen and (min-width: 900px) {
+      font-size: 1.8rem;
+    }
+    a + a {
+      padding-left: 20px;
+    }
+  }
+}
+.social-networks {
+  width: 163px;
+  margin: 10px auto 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+  a {
+    width: 27px;
+    height: 27px;
+    float: left;
+    margin-right: 7px;
+    display: block;
+    transition: transform 1s;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+      transform: rotate(360deg);
+    }
+    img {
+      padding: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+}
+.subscribe-button:before {
+  font-size: 15px;
+  margin-right: 6px;
+}
+.tag-header {
+  position: relative;
+  width: 80%;
+  max-width: 710px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+/* ==========================================================================
+  Space BG
+  ========================================================================== */
+// n is number of stars required
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value);
+}
+$shadows-small:         multiple-box-shadow(700);
+$shadows-medium:        multiple-box-shadow(200);
+$shadows-big:           multiple-box-shadow(100);
+$shadows-xl:            multiple-box-shadow(50);
+
+@keyframes animStar {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-2000px); }
+}
+
+.stars {
+  &.wide {
+    margin-left: 500px;
+    @media only screen and (min-width: 1921px) {
+      margin-left: 1000px;
+    }
+  }
+  .layer {
+    border-radius: 50%;
+  }
+  .layer1 {
+    width: 1px;
+    height: 1px;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+  }
+  .layer2 {
+    width: 1px;
+    height: 1px;
+    box-shadow: $shadows-small;
+    animation: animStar 100s linear infinite;
+  }
+  .layer3 {
+    width: 2px;
+    height: 2px;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+  }
+  .layer4 {
+    width: 3px;
+    height: 3px;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+  }
+  .layer5 {
+    width: 4px;
+    height: 4px;
+    box-shadow: $shadows-xl;
+    animation: animStar 200s linear infinite;
+  }
+}
