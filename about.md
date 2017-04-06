@@ -6,8 +6,8 @@ updated: 2013-12-30T21:44:29.734Z
 template: page
 ---
 
-Hi, I'm a front end engineer living in San Francisco.
+Front end engineer building neat things for [SoFi](https://www.sofi.com) in San Francisco.
 
-When I'm not building cool things for [SoFi](https://www.sofi.com), I'm hunting down craft beers and live music!
+Craft beers, BBQ and live music are my jam.
 
-Drop me a line sometime - everywhere @jmsmrgn
+Drop me a line everywhere @jmsmrgn

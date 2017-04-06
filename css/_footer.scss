@@ -1,0 +1,39 @@
+/* ==========================================================================
+  Footer - The bottom of every page
+  ========================================================================== */
+.site-footer {
+  margin: 3rem 0 0 0;
+  position: relative;
+  padding: 20px 15px;
+  border-top: #EBF2F6 1px solid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75em;
+  color: #BBC7CC;
+  @media only screen and (min-width: 501px) {
+    margin: 8rem 0 0 0;
+  }
+}
+.site-footer a {
+  color: #BBC7CC;
+  text-decoration: none;
+  font-weight: bold;
+}
+.site-footer a:hover {
+  color: #50585D;
+}
+.copyright {
+  display: block;
+  width: 120px;
+  float: left;
+}
+.poweredby {
+  display: block;
+  width: 210px;
+  clear: left;
+  @media only screen and (min-width: 375px) {
+    float: right;
+    text-align: right;
+    clear: none;
+  }
+}

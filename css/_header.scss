@@ -1,8 +1,10 @@
+/* ==========================================================================
+  Header - Everything in main hero section
+  ========================================================================== */
 .main-header {
   height: 340px;
   position: relative;
   width: 100%;
-  margin-bottom: 5rem;
   text-align: left;
   background: radial-gradient(ellipse at bottom, #0b8793 0%, #360033 100%);
   overflow: hidden;
@@ -45,35 +47,33 @@
     @media only screen and (min-width: 901px) {
       height: 100px;
     }
-    @media only screen and (min-width: 901px) {
-      height: 100px;
-    }
   }
 }
 .page-title {
-  margin: 10px 0 10px 0;
-  font-size: 5rem;
+  margin: 10px 0;
   letter-spacing: -1px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #fff;
-  @media only screen and (max-width: 500px) {
-    font-size: 3rem;
+  font-size: 3.2rem;
+  @media only screen and (min-width: 501px) {
+    font-size: 4rem;
   }
-  @media only screen and (max-width: 900px) {
-    font-size: 3rem;
+  @media only screen and (min-width: 901px) {
+    font-size: 4.5rem;
   }
 }
 .page-description {
-  margin: 0;
-  font-size: 2rem;
-  line-height: 1.5em;
   font-weight: 400;
   font-family: "Merriweather", serif;
   letter-spacing: 0.01rem;
   color: rgba(255,255,255,0.8);
-  font-size: 1.7rem;
-  @media only screen and (min-width: 900px) {
+  font-size: 1.6rem;
+  @media only screen and (min-width: 501px) {
+    margin: 0;
+    font-size: 1.7rem;
+  }
+  @media only screen and (min-width: 901px) {
     font-size: 2.1rem;
   }
 }
@@ -82,9 +82,9 @@
     color: rgba(255,255,255,0.8);
     margin-right: 10px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 901px) {
       font-size: 1.8rem;
     }
     a + a {
@@ -94,7 +94,7 @@
 }
 .social-networks {
   width: 163px;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 0;
   padding-bottom: 50px;
   text-align: center;
   a {
@@ -107,8 +107,8 @@
     &:last-child {
       margin-right: 0;
     }
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       transform: rotate(360deg);
     }
     img {
@@ -130,32 +130,33 @@
   margin: 4rem auto;
   text-align: center;
 }
-
 /* ==========================================================================
   Space BG
   ========================================================================== */
 // n is number of stars required
 @function multiple-box-shadow ($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  $value: "#{random(2000)}px #{random(2000)}px #FFF";
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
   }
   @return unquote($value);
 }
-$shadows-small:         multiple-box-shadow(700);
-$shadows-medium:        multiple-box-shadow(200);
-$shadows-big:           multiple-box-shadow(100);
-$shadows-xl:            multiple-box-shadow(50);
-
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+$shadows-xl: multiple-box-shadow(50);
 @keyframes animStar {
-  from { transform: translateY(0px); }
-  to   { transform: translateY(-2000px); }
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
 }
-
 .stars {
   &.wide {
     margin-left: 500px;
-    @media only screen and (min-width: 1921px) {
+    @media only screen and (min-width: 1800px) {
       margin-left: 1000px;
     }
   }

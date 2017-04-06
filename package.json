@@ -4,6 +4,7 @@
   "repository": "git://github.com/jmsmrgn/blog.git",
   "license": "MIT",
   "dependencies": {
+    "normalize": "0.3.1",
     "read-time": "1.0.0",
     "reptar-excerpt": "1.0.0",
     "reptar-html-minifier": "1.0.0"

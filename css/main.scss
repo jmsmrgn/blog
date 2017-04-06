@@ -1,3 +1,10 @@
-@import "screen";
-@import "highlight";
-@import "header";
+@import "normalize",
+        "utilities",
+        "animations",
+        "base",
+        "icons",
+        "header",
+        "content",
+        "pagination",
+        "highlight",
+        "footer";

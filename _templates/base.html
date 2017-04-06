@@ -25,70 +25,67 @@
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <div class="site-container">
-    <div class="site-content">
-      <header class="main-header {% if pagination.metadata %}tag-head{% endif %}">
-        <div class="stars">
-          <div class="layer layer1"></div>
-          <div class="layer layer2"></div>
-          <div class="layer layer3"></div>
-          <div class="layer layer4"></div>
-          <div class="layer layer5"></div>
-        </div>
-        <div class="stars wide">
-          <div class="layer layer1"></div>
-          <div class="layer layer2"></div>
-          <div class="layer layer3"></div>
-        </div>
-        <div class="main-header-content">
-          <a class="main-header-logo" href="/">
-            <img src="/images/profile.jpg" alt="Blog Logo" />
+    <header class="main-header {% if pagination.metadata %}tag-head{% endif %}">
+      <div class="stars">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="layer layer4"></div>
+        <div class="layer layer5"></div>
+      </div>
+      <div class="stars wide">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+      </div>
+      <div class="main-header-content">
+        <a class="main-header-logo" href="/">
+          <img src="/images/profile.jpg" alt="Blog Logo" />
+        </a>
+        <div class="main-header-description">
+          <a class="page-title" href="/">
+            <h1 class="page-title">James Morgan</h1>
           </a>
-          <div class="main-header-description">
-            <a class="page-title" href="/">
-              <h1 class="page-title">James Morgan</h1>
+          <h2 class="page-description">Front End Grumblings</h2>
+          <div class="main-nav">
+            <a href="/about/">About</a>
+            <a href="/archive/">Archive</a>
+            <!-- <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/jmsmrgn/####">Subscribe</a> -->
+          </div>
+          <div class="social-networks">
+            <a href="https://github.com/jmsmrgn" title="GitHub">
+              <img src="/images/external-networks/github.svg" alt="GitHub">
             </a>
-            <h2 class="page-description">Front End Grumblings</h2>
-            <div class="main-nav">
-              <a href="/about/">About</a>
-              <a href="/archive/">Archive</a>
-              <!-- <a class="subscribe-button icon-feed" href="http://feeds.feedburner.com/jmsmrgn/####">Subscribe</a> -->
-            </div>
-            <div class="social-networks">
-              <a href="https://github.com/jmsmrgn" title="GitHub">
-                <img src="/images/external-networks/github.svg" alt="GitHub">
-              </a>
-              <a href="http://instagram.com/jmsmrgn" title="Codepen">
-                <img src="/images/external-networks/codepen.svg" alt="Codepen">
-              </a>
-              <a href="http://www.linkedin.com/in/jmsmrgn" title="LinkedIn">
-                <img src="/images/external-networks/linkedin.svg" alt="LinkedIn">
-              </a>
-              <a href="https://twitter.com/jmsmrgn" title="Twitter">
-                <img src="/images/external-networks/twitter.svg" alt="Twitter">
-              </a>
-              <a href="mailto:hello@jmsmrgn.com" title="Email">
-                <img src="/images/external-networks/email.svg" alt="Email">
-              </a>
-            </div>
+            <a href="http://instagram.com/jmsmrgn" title="Codepen">
+              <img src="/images/external-networks/codepen.svg" alt="Codepen">
+            </a>
+            <a href="http://www.linkedin.com/in/jmsmrgn" title="LinkedIn">
+              <img src="/images/external-networks/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/jmsmrgn" title="Twitter">
+              <img src="/images/external-networks/twitter.svg" alt="Twitter">
+            </a>
+            <a href="mailto:hello@jmsmrgn.com" title="Email">
+              <img src="/images/external-networks/email.svg" alt="Email">
+            </a>
           </div>
         </div>
+      </div>
+    </header>
 
-      </header>
+    <main class="content" role="main">
+      {% block content_header %}{% endblock%}
 
-      <main id="content" class="content" role="main">
-        {% block content_header %}{% endblock%}
+      {% if pagination.page > 1 %}
+        <div class="extra-pagination inner">
+          {% include "_pagination.html" %}
+        </div>
+      {% endif %}
 
-        {% if pagination.page > 1 %}
-          <div class="extra-pagination inner">
-            {% include "_pagination.html" %}
-          </div>
-        {% endif %}
+      {% block content %}{% endblock%}
 
-        {% block content %}{% endblock%}
-
-        {% include "_pagination.html" %}
-      </main>
-    </div>
+      {% include "_pagination.html" %}
+    </main>
 
     <footer class="site-footer clearfix">
       <section class="copyright"><a href="https://jmsmrgn.com/">James Morgan</a> &copy; 2017</section>
@@ -98,24 +95,6 @@
     </footer>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- <script>
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script> -->
   <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>

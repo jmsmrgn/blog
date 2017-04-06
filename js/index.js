@@ -4,7 +4,7 @@
 
 /* globals jQuery, document */
 (function ($, sr, undefined) {
-    "use strict";
+    'use strict';
 
     var $document = $(document),
 
@@ -34,7 +34,7 @@
 
     $document.ready(function () {
 
-        var $postContent = $(".post-content");
+        var $postContent = $('.post-content');
         $postContent.fitVids();
 
         function updateImageWidth() {
@@ -49,7 +49,7 @@
             }
         }
 
-        var $img = $("img").on('load', updateImageWidth);
+        var $img = $('img').on('load', updateImageWidth);
         function casperFullImg() {
             $img.each(updateImageWidth);
         }
@@ -57,7 +57,7 @@
         casperFullImg();
         $(window).smartresize(casperFullImg);
 
-        $(".scroll-down").arctic_scroll();
+        $('.scroll-down').arctic_scroll();
 
     });
 
