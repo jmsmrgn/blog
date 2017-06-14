@@ -3,11 +3,22 @@
   "version": "1.0.0",
   "repository": "git://github.com/jmsmrgn/blog.git",
   "license": "MIT",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "dependencies": {
+    "fitvids": "2.0.0",
     "normalize": "0.3.1",
     "read-time": "1.0.0",
     "reptar-excerpt": "1.0.0",
     "reptar-html-minifier": "1.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "4.0.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-node": "5.0.0",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1"
+  }
 }

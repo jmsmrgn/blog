@@ -1,0 +1,12 @@
+{
+  "extends": "standard",
+  "rules": {
+    "indent": ["error", 2],
+    "space-before-function-paren": ["off"],
+    "no-path-concat": ["off"],
+    "standard/object-curly-even-spacing": ["off"],
+    "no-useless-return": ["off"],
+    "no-undef": ["off"],
+    "one-var": ["off"]
+  }
+}

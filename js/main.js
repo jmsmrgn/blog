@@ -1,3 +1,3 @@
-// require('./analytics.js');
-require('./jquery.fitvids.js');
-require('./index.js');
+// require('./analytics.js')
+require('./node_modules/fitvids/fitvids.min.js')
+require('./custom.js')

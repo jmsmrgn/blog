@@ -1,12 +1,12 @@
 ---
 title: Promises in Action
-date: 2017-4-13
+date: 2016-4-13
 slug: promises-in-action
 tags:
 - javascript, promises, async, es6
 ---
 
-Promises are a step up from using callbacks to deal with asynchronicity for several reasons. They're composable and chainable, and help remedy issues created by callback trees as they become more complex. Callbacks also don't execute in parallel or provide simple error handling like promises do. We can easily pass them around and integrate elsewhere even though we don't have their values yet.
+Promises are a step up from using callbacks to deal with asynchronicity for several reasons. They're composable and chainable, and help remedy issues created by callback trees as they become more complex. Callbacks don't execute in parallel or provide simple error handling like promises do. We can easily pass them around and integrate elsewhere even though we don't have their values yet.
 
 ES6 includes promises natively, but non-supported browsers can be easily polyfilled with [babelify/polyfill](https://www.npmjs.com/package/babelify-es6-polyfill) or similar.
 

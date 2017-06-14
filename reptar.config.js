@@ -55,7 +55,7 @@ module.exports = {
     extensions: ['markdown', 'mkdown', 'mkdn', 'mkd', 'md'],
     options: { preset: 'commonmark', highlight: 'prism' },
   },
-  server: { port: 8080, host: '127.0.0.1', baseurl: '' },
+  server: { port: 7777, host: '127.0.0.1', baseurl: '' },
   newFilePermalink: '/_posts/:date|YYYY/:date|YYYY-:date|MM-:date|D-:title.md',
   middlewares: [
     require('./_middleware/template-filters'),
