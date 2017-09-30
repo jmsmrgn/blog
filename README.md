@@ -1,3 +1,3 @@
-# https://jmsmrgn.com
+# https://jamesmorgan.io
 
-A [`reptar`](http://reptar.github.io/)-based blog.
+Personal blog published with [`reptar`](http://reptar.github.io/)
