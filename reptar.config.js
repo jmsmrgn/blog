@@ -5,11 +5,11 @@ module.exports = {
   site: {
     title: 'James Morgan',
     author: 'James Morgan',
-    email: 'hello@jmsmrgn.com',
+    email: 'contact@jamesmorgan.io',
     description: 'Personal site of James Morgan (jmsmrgn).',
-    url: 'https://jmsmrgn.com/',
+    url: 'https://jamesmorgan.io/',
     // gravatar_url: 'http://www.gravatar.com/avatar/f863e9eb811851834773398e72614dc1?d=404',
-    disqus_url: 'jmsmrgn.com',
+    disqus_url: 'jamesmorgan.io',
   },
   path: {
     source: './',
