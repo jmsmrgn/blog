@@ -13,7 +13,7 @@ module.exports = {
   },
   path: {
     source: './',
-    destination: './_site',
+    destination: './_build',
     templates: './_templates',
   },
   file: {

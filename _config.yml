@@ -18,7 +18,7 @@ site:
 # is found.
 path:
   source:      ./
-  destination: ./_site
+  destination: ./_build
   plugins:     ./_plugins
   themes:      ./_themes
 
