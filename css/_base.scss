@@ -37,10 +37,10 @@ h6 {
   -o-font-feature-settings: "dlig" 1, "liga" 1, "lnum" 1, "kern" 1;
   color: #2E2E2E;
   line-height: 1.15em;
-  margin: 0 0 0.3em 0;
+  margin:  1.1em 0 0.3em 0;
   font-family: "Open Sans", sans-serif;
   @media only screen and (min-width: 501px) {
-    margin: 0 0 0.4em;
+    margin: 1.2em 0 0.4em 0;
   }
 }
 h1 {
@@ -316,8 +316,8 @@ margin on the iframe, cause it breaks stuff. */
 }
 .content[role="main"] {
   flex: 1;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   @media only screen and (min-width: 501px) {
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
   }
 }

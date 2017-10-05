@@ -14,7 +14,7 @@
 }
 .main-header-content {
   position: relative;
-  padding-top: 40px;
+  padding-top: 37px;
   text-align: center;
   z-index: 1;
 }
@@ -93,13 +93,13 @@
   }
 }
 .social-networks {
-  width: 163px;
+  width: 183px;
   margin: 10px auto 0;
   padding-bottom: 50px;
   text-align: center;
   a {
-    width: 27px;
-    height: 27px;
+    width: 31px;
+    height: 31px;
     float: left;
     margin-right: 7px;
     display: block;
@@ -112,7 +112,8 @@
       transform: rotate(360deg);
     }
     img {
-      padding: 0;
+      width: 27px;
+      height: 27px;
       border-radius: 50%;
       background-color: #fff;
       border: 2px solid #fff;
