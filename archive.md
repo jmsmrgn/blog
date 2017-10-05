@@ -8,7 +8,7 @@ template: page
 
   #### {{date}}
 
-  {% for file in groupedFiles | reverse %}
+  {% for file in groupedFiles | sort(false, true, 'date') | reverse %}
   - [{{file.title}}]({{file.url}}) ({{file.date | date('MMMM Do')}})
   {% endfor %}
 </div>
