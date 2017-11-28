@@ -4,6 +4,6 @@ url: about
 template: page
 ---
 
-Greetings UI crafters! Grab a cold 🍺 and enjoy this stream of concepts and techniques used in modern front-end web development.
+Grab a cold 🍺 and enjoy this stream of concepts and techniques used in modern frontend engineering.
 
-Currently, I'm building neat things for [SoFi](https://www.sofi.com) in San Francisco. Trail running, grilled meats and live music are my jam. Reach out to me anywhere `@jmsmrgn`
+Currently, I'm building fintech things for [SoFi](https://www.sofi.com) in San Francisco. Live music, Schwarzenegger movies and open flame cooking keep me happy. Reach out to me anywhere `@jmsmrgn`
