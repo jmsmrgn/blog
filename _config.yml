@@ -5,7 +5,7 @@
 site:
   title: James Morgan
   author: James Morgan
-  email: contact@jamesmorgan.io
+  email: james@jamesmorgan.io
   description: Personal blog of James Morgan (jmsmrgn).
   url: "https://jamesmorgan.io"
   # gravatar_url: 'http://www.gravatar.com/avatar/f863e9eb811851834773398e72614dc1?d=404'
@@ -104,7 +104,7 @@ markdown:
 # When running `yarn serve` what settings should be used.
 server:
   port:    7777
-  host:    127.0.0.1
+  host:    localhost
   baseurl: "" # does not include hostname
 
 # Where files created via `yarn new` should be placed.
