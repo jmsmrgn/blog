@@ -1,3 +1,3 @@
-# https://jamesmorgan.io
+## https://morgan.cx
 
-Personal blog published with [`reptar`](http://reptar.github.io/)
+personal site
