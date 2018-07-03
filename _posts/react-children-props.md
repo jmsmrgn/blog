@@ -36,6 +36,7 @@ class Parent extends React.Component {
 ```
 
 What if we want to edit the props of each child that we just looped over? React has us covered with [React.cloneElement](https://reactjs.org/docs/react-api.html#cloneelement). No surprise here, we pass an element as the first argument and an object of props as the second:
+
 ```javascript
 renderChildren() {
   return React.Children.map(this.props.children, child => {
@@ -47,6 +48,7 @@ renderChildren() {
 ```
 
 The cloned child is going to receive the title prop of its parent. We can pass anything we want, including any available methods:
+
 ```javascript
 renderChildren() {
   return React.Children.map(this.props.children, child => {
