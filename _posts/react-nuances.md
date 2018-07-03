@@ -8,9 +8,9 @@ tags:
   - es6
 ---
 
-If you're new to React, you WILL run into a few specific quirks that aren't immediately apparent. If you know what to watch out for, these head scratchers won't ruin your day.
+If you're new to React, you'll run into a few quirks that aren't immediately apparent. If you know what to watch out for, these head scratchers won't ruin your day.
 
-##Capitalized component names are enforced
+### Capitalized component names are enforced
 
 React will throw an error if your component doesn't begin with a capital letter.
 
@@ -22,21 +22,21 @@ Easily correctable:
 class Timer extends React.Component {}
 ```
 
-##JSX elements must be closed
+### JSX elements must be closed
 
 Can't leave these open as we often do in HTML:
 
-```haml
-<br> // NO SIR, TRY AGAIN
-<br /> // YES, PROCEED
+```html
+<br> <!-- no sir, try again -->
+<br /> <!-- yes, proceed -->
 ```
 
-##HTML attributes in JSX can differ slightly
+### HTML attributes in JSX can differ slightly
 
 For the most part you can use what you know, but here are some exceptions/guidelines from the [docs](https://reactjs.org/docs/dom-elements.html#supported-attributes):
 
 - Everything is camelCased (just like DOM APIs)
-```haml
+```html
 <div className="macaroni"></div>
 ```
 
@@ -48,21 +48,21 @@ For the most part you can use what you know, but here are some exceptions/guidel
 
 - Because `for` is a reserved word in JavaScript, React elements use `htmlFor` instead
 
-```haml
-<label htmlFor="free"</label>
+```html
+<label htmlFor="free"></label>
 ```
 
-##NO if/else statements in JSX
+### NO if/else statements in JSX
 
 From the [docs](https://react-cn.github.io/react/tips/if-else-in-JSX.html): *If-else statements don't work inside JSX. This is because JSX is just syntactic sugar for function calls and object construction.*
 
 Dust off and forge ahead with a ternary expression instead:
 
 ```javascript
-{ condition ? 'if true' : null }
+{ condition ? 'applies if true' : 'applies if false' }
 ```
 
-##`setState` is an async function
+### `setState` is an async function
 
 When using `setState` to well, set some state, it's an asynchronous operation. You can take a look at `this.state` right after execution if you're skeptical. Good news is that `setState` will take a callback if you need an immediate action to follow:
 
@@ -75,21 +75,21 @@ this.setState(
 )
 ```
 
-##Mutating from within <code>render()</code> is a no-go
+### Mutating from within <code>render()</code> is a no-go
 
 React re-renders every time state changes, so it's intuitive that we shouldn't introduce any other changes during a render cycle. In an ideal world, React is fed some data and has everything it needs to render and wait for the next change. Forget the surprises.
 
-##`this.props.children` isn't always an array
+### `this.props.children` isn't always an array
 
 React will return a single object if only one child exists.
 
-```haml
-// inner stores as a single object
+```html
+<!-- inner stores as a single object -->
 <div>
   <p></p>
 </div>
 
-// inner stores as an array objects
+<!-- inner stores as an array objects -->
 <div>
   <p></p>
   <p></p>
@@ -102,7 +102,7 @@ This can be a bummer if you'd like to use handy array methods like [map](https:/
 React.Children.toArray(children)
 ```
 
-Keep these in mind and get to your 🍺 while it's still cold!
+Now treat yourself. 🍺 🌮
 
 
 

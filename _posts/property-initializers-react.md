@@ -56,4 +56,4 @@ __.babelrc__
 }
 ```
 
-Now that's a squeaky 🛁 component and you deserve a cold 🍺 !
+Now that's a squeaky 🛁 component. Treat yourself. 🍺 🌮

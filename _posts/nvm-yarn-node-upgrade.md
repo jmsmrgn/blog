@@ -18,4 +18,5 @@ The long road is to reinstall each of them, forcing yarn to re-link. A quicker s
 ```bash
 npm install -g fix-yarn-global-packages
 ```
-Chore averted. Grab a cold 🍺 instead!
+
+Chore averted. Treat yourself. 🍺 🌮

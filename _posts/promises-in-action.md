@@ -69,3 +69,5 @@ Promise.all([
 ```
 
 In summary, promises are powerful due to their composability, chainability, simple error handling and much more. Check out [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for additional methods. Thanks to MPJ at [funfunfunction](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q) for the clear examples.
+
+Treat yourself. 🍺 🌮

@@ -59,4 +59,4 @@ renderChildren() {
 }
 ```
 
-I suggest you learn yourself up on the remaining React.Children utilities cuz they're damn handy. After that, enjoy a cold 🍺 !
+Learn the remaining React.Children utilities cuz they're damn handy and then treat yourself. 🍺 🌮
