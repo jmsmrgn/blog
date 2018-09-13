@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jmsmrgn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://morgan.cx
+  * I am jmsmrgn (https://keybase.io/jmsmrgn) on keybase.
+  * I have a public key ASCjDRHgAI0o4Zzt_NmDpQCBJvELDCoffpHOc3bHJ5MGPgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a30d11e0008d28e19cedfcd983a5008126f10b0c2a1f7e91ce7376c72793063e0a",
+      "host": "keybase.io",
+      "kid": "0120a30d11e0008d28e19cedfcd983a5008126f10b0c2a1f7e91ce7376c72793063e0a",
+      "uid": "d29779d3395ee8de6faac7fcb378a119",
+      "username": "jmsmrgn"
+    },
+    "merkle_root": {
+      "ctime": 1536808926,
+      "hash": "e4ac2fc3cb86c6c723e583f927a4c9c9d856801bb97c33726024c947d12846897fdb97767ee033d6ea13e95a6c57764a5f012672956741b97af4bc9ab4c37c01",
+      "hash_meta": "020f12d50049f7c08fe48c6c252398ec8b0e8f55dd88364cd64894789e956244",
+      "seqno": 3602584
+    },
+    "service": {
+      "entropy": "I42cTlUjU0FZDq5sVxIsQ/0Y",
+      "hostname": "morgan.cx",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.6.0"
+  },
+  "ctime": 1536808934,
+  "expire_in": 504576000,
+  "prev": "dcd88017b0de92e41243872ec8c4ee4073fa5290f2bb8f1e49cabdd3828faa88",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgow0R4ACNKOGc7fzZg6UAgSbxCwwqH36RznN2xyeTBj4Kp3BheWxvYWTESpcCFcQg3NiAF7DekuQSQ4cuyMTuQHP6UpDyu48eScq904KPqojEIOcmOhd2tdqLtWydnsndJJQkTyeS64bNb1RZz1+ihvaLAgHCo3NpZ8RA8hhD3CLN7JervF6aDF7wxuDA+IpdFJw/EtlyuM1Qot9t5RxoFseb0chuDPMc3lv+DqI1rzV0n4JIFeFQP/LxCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFCP7zXynO41f4TCQJlIzAiw7wPLhiMybhlzmHLMz18to3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jmsmrgn
+
+==================================================================
