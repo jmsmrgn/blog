@@ -1,7 +1,7 @@
 ---
-title: 'React: Children Utilities - A Deeper Dive'
+title: 'React: Child Utilities - Deeper Dive'
 date: 2023-9-07
-slug: react-children-utilities-deeper-dive
+slug: react-child-utilities-deeper-dive
 tags:
   - javascript
   - react
