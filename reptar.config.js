@@ -9,11 +9,11 @@ module.exports = {
   site: {
     title: 'James Morgan',
     author: 'James Morgan',
-    email: 'james@morgan.cx',
+    email: 'james@morg.dev',
     description: 'Personal site of James Morgan (jmsmrgn)',
     baseurl: '',
-    url: 'https://morgan.cx',
-    disqus_url: 'morgan.cx'
+    url: 'https://morg.dev',
+    disqus_url: 'morg.dev'
   },
   // Where things are.
   // If you have a unique layout for your site and want to

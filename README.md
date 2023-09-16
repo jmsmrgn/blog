@@ -1,3 +1,3 @@
-## https://morgan.cx
+## https://morg.dev
 
 personal site
