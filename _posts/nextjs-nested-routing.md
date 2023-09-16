@@ -1,7 +1,7 @@
 ---
-title: 'Next.js: Understanding Dynamic Routing'
+title: 'Next.js: Nested Routing'
 date: 2023-9-12
-slug: nextjs-dynamic-routing
+slug: nextjs-nested-routing
 tags:
   - next.js
   - javascript
@@ -40,7 +40,8 @@ import Link from 'next/link';
   <a>Product Details</a>
 </Link>
 ```
-#### Benefits of Nested Dynamic Routing
+
+#### Benefits
 
 The advantages of nested dynamic routing are clear:
 
