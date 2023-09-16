@@ -1,5 +1,5 @@
 ---
-title: 'Next.js: Nested Routing'
+title: 'Next.js: Nested Dynamic Routes'
 date: 2023-9-12
 slug: nextjs-nested-routing
 tags:
@@ -12,7 +12,7 @@ Dynamic routing is a technique that allows your Next.js application to handle dy
 
 This flexibility is awesome, but what if you want to go deeper and create a structure like `/category/[category]/[productId]`, where you have both category and product IDs in the URL? This is where nested dynamic routing comes into play.
 
-#### Nested Dynamic Routing in Next.js
+#### Nested Routing in Next.js
 
 Next.js takes dynamic routing to the next level by allowing you to nest dynamic routes within each other. This means you can create complex URL structures with multiple dynamic segments, giving you more control and organization in your application.
 
